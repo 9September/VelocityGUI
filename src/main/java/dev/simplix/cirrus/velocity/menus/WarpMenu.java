@@ -1,25 +1,25 @@
 package dev.simplix.cirrus.velocity.menus;
 
-import com.velocitypowered.api.proxy.ConnectionRequestBuilder;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.server.RegisteredServer;
+import dev.simplix.cirrus.common.Cirrus;
 import dev.simplix.cirrus.common.business.PlayerWrapper;
 import dev.simplix.cirrus.common.configuration.MenuConfiguration;
+import dev.simplix.cirrus.common.converter.Converters;
 import dev.simplix.cirrus.common.menus.SimpleMenu;
 import dev.simplix.cirrus.common.model.CallResult;
-import dev.simplix.cirrus.velocity.converters.PlayerConverter;
 import net.md_5.bungee.api.ChatColor;
 
 import java.util.Locale;
 import java.util.Optional;
 
 
-public class ExampleMenu extends SimpleMenu {
+public class WarpMenu extends SimpleMenu {
 
     private final ProxyServer proxyServer;
 
-    public ExampleMenu(PlayerWrapper player, MenuConfiguration configuration, ProxyServer proxyServer) {
+    public WarpMenu(PlayerWrapper player, MenuConfiguration configuration, ProxyServer proxyServer) {
         super(player, configuration, Locale.ENGLISH);
         this.proxyServer = proxyServer;
 
@@ -33,6 +33,28 @@ public class ExampleMenu extends SimpleMenu {
             }
             player().closeInventory();
             return CallResult.DENY_GRABBING;
+        });
+
+        registerActionHandler("core", click -> {
+
+        });
+
+        registerActionHandler("field", click -> {
+            player().closeInventory();
+            new FieldMenu(player, Cirrus.configurationFactory().loadFile("plugins/VelocityGUI/menu_field.json"), proxyServer).open();
+            return CallResult.DENY_GRABBING;
+        });
+
+        registerActionHandler("store", click -> {
+
+        });
+
+        registerActionHandler("quest", click -> {
+
+        });
+
+        registerActionHandler("pass", click -> {
+
         });
 
 

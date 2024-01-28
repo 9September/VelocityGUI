@@ -29,7 +29,7 @@ public class CirrusExamplePlugin {
     @Subscribe
     public void onProxyInitialization(ProxyInitializeEvent event) {
         CirrusVelocity.init(proxyServer, this);
-        commandManager.register("test",new TestCommand(proxyServer));
+        commandManager.register("메뉴",new TestCommand(proxyServer));
     }
 
 

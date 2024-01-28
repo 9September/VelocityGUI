@@ -1,0 +1,61 @@
+{
+  "title": {
+    "ko": "§eKINGDOM MENU"
+  },
+  "type": "GENERIC_9X6",
+  "placeholderItem": {
+    "itemType": "GRAY_STAINED_GLASS_PANE",
+    "displayName": {
+      "en": "§0",
+      "de": "§0"
+    },
+    "lore": {
+      "en": [],
+      "de": []
+    },
+    "amount": 1,
+    "slots": [
+      0
+    ]
+  },
+  "reservedSlots": [],
+  "items": [
+    {
+      "itemType": "RED_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§c§l몬스터 필드로 이동하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 몬스터 필드로 이동합니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "field",
+      "actionArguments": [],
+      "slots": [
+        0,1,2,3,9,10,11,12,18,19,20,21
+      ]
+    },
+
+    {
+      "itemType": "BLUE_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§9§l야생 필드로 이동하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 야생 필드로 이동합니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "wild",
+      "actionArguments": [],
+      "slots": [
+        27,28,29,30,36,37,38,39,45,46,47,48
+      ]
+    }
+  ]
+}

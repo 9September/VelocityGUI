@@ -6,7 +6,7 @@ import com.velocitypowered.api.proxy.ProxyServer;
 import dev.simplix.cirrus.common.Cirrus;
 import dev.simplix.cirrus.common.business.PlayerWrapper;
 import dev.simplix.cirrus.common.converter.Converters;
-import dev.simplix.cirrus.velocity.menus.ExampleMenu;
+import dev.simplix.cirrus.velocity.menus.WarpMenu;
 
 public class TestCommand implements SimpleCommand {
 
@@ -20,7 +20,7 @@ public class TestCommand implements SimpleCommand {
     public void execute(Invocation invocation) {
         if (invocation.source() instanceof Player) {
             Player player = (Player) invocation.source();
-            new ExampleMenu(Converters.convert(player, PlayerWrapper.class),
+            new WarpMenu(Converters.convert(player, PlayerWrapper.class),
                     Cirrus.configurationFactory().loadFile("plugins/VelocityGUI/menu.json"), proxyServer).open();
         }
     }

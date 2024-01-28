@@ -1,6 +1,9 @@
 package dev.simplix.cirrus.common.converter;
 
+import dev.simplix.cirrus.common.business.PlayerWrapper;
+import dev.simplix.cirrus.velocity.VelocityPlayerWrapper;
 import lombok.NonNull;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.AbstractMap.SimpleEntry;
@@ -131,4 +134,5 @@ public final class Converters {
         }
         return converter;
     }
+
 }

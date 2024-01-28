@@ -2,6 +2,7 @@ package dev.simplix.cirrus.velocity;
 
 import com.velocitypowered.api.proxy.Player;
 import dev.simplix.cirrus.common.business.PlayerWrapper;
+import dev.simplix.cirrus.common.converter.Converter;
 import dev.simplix.protocolize.api.Protocolize;
 import dev.simplix.protocolize.api.player.ProtocolizePlayer;
 
