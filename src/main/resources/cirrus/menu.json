@@ -1,0 +1,25 @@
+{
+  "title": {
+    "ko": "§eKINGDOM 메뉴"
+  },
+  "type": "GENERIC_9X6",
+  "reservedSlots": [],
+  "items": [
+    {
+      "itemType": "RED_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§c스폰으로 이동하기"
+      },
+      "lore": {
+        "ko": [
+          "§6{viewer}§7님 안녕하세요!",
+          "§7좌클릭 시 스폰으로 이동합니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "tnt",
+      "actionArguments": [],
+      "slots": [0,1,2,9,10,11]
+    }
+  ]
+}

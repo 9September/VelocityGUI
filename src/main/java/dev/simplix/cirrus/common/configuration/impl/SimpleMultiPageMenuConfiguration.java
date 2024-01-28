@@ -26,7 +26,10 @@ public class SimpleMultiPageMenuConfiguration implements MultiPageMenuConfigurat
     private LocalizedString title;
     private InventoryType type;
     private LocalizedItemStackModel placeholderItem;
+    @Builder.Default
     private int[] reservedSlots = new int[0];
+    @Builder.Default
     private LocalizedItemStackModel[] items = new LocalizedItemStackModel[0];
+    @Builder.Default
     private Map<String, LocalizedItemStackModel> businessItems = new HashMap<>();
 }

@@ -9,5 +9,15 @@
         <module name="cirrus-velocity" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cirrus-bungeecord" target="17" />
+      <module name="cirrus-bungeecord-example" target="17" />
+      <module name="cirrus-common" target="17" />
+      <module name="cirrus-spigot" target="17" />
+      <module name="cirrus-spigot-example" target="17" />
+      <module name="cirrus-spigot-modern" target="17" />
+      <module name="cirrus-velocity (1)" target="17" />
+      <module name="cirrus-velocity-example" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
