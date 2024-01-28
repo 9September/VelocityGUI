@@ -1,25 +1,157 @@
 {
   "title": {
-    "ko": "§eKINGDOM 메뉴"
+    "ko": "§eKINGDOM MENU"
   },
   "type": "GENERIC_9X6",
+  "placeholderItem": {
+    "itemType": "GRAY_STAINED_GLASS_PANE",
+    "displayName": {
+      "en": "§0",
+      "de": "§0"
+    },
+    "lore": {
+      "en": [],
+      "de": []
+    },
+    "amount": 1,
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ]
+  },
   "reservedSlots": [],
   "items": [
     {
       "itemType": "RED_STAINED_GLASS_PANE",
       "displayName": {
-        "ko": "§c스폰으로 이동하기"
+        "ko": "§c§l스폰으로 이동하기"
       },
       "lore": {
         "ko": [
-          "§6{viewer}§7님 안녕하세요!",
-          "§7좌클릭 시 스폰으로 이동합니다."
+          " ",
+          "§5좌클릭 시 스폰으로 이동합니다."
         ]
       },
       "amount": 1,
-      "actionHandler": "tnt",
+      "actionHandler": "spawn",
       "actionArguments": [],
-      "slots": [0,1,2,9,10,11]
+      "slots": [
+        0,1,2,9,10,11
+      ]
+    },
+
+    {
+      "itemType": "ORANGE_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§6§l내 코어 보기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 내 코어를 확인합니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "noAction",
+      "actionArguments": [],
+      "slots": [
+        3,4,5,12,13,14
+      ]
+    },
+
+    {
+      "itemType": "YELLOW_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§e§l필드로 이동하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 필드를 선택할 수 있습니다.",
+          "§5야생필드/몬스터필드"
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "noAction",
+      "actionArguments": [],
+      "slots": [
+        6,7,8,15,16,17
+      ]
+    },
+
+    {
+      "itemType": "LIME_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§a§l상점으로 이동하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 상점GUI를 확인합니다.",
+          "§5시장가/유저상점/경매소"
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "noAction",
+      "actionArguments": [],
+      "slots": [
+        18,19,20,27,28,29
+      ]
+    },
+
+    {
+      "itemType": "BLUE_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§9§l퀘스트 확인하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 퀘스트 정보를 확인할 수 있습니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "noAction",
+      "actionArguments": [],
+      "slots": [
+        21,22,23,30,31,32
+      ]
+    },
+
+    {
+      "itemType": "PURPLE_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§d§l패스 오픈하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 패스를 확인할 수 있습니다.",
+          "출석/레벨/퀘스트/접속시간/누적시간"
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "noAction",
+      "actionArguments": [],
+      "slots": [
+        24,25,26,33,34,35
+      ]
     }
   ]
 }
