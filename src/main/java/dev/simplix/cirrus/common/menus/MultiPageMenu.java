@@ -112,11 +112,11 @@ public class MultiPageMenu extends AbstractMenu {
     public Menu currentPage() {
         return this.pages.get(this.currentPage - 1);
     }
-
+    /*
     public List<Menu> pages() {
         return this.pages;
     }
-
+    */
     public int currentPageNumber() {
         return this.currentPage;
     }

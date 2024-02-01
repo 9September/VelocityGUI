@@ -1,0 +1,82 @@
+{
+  "title": {
+    "ko": "§aKINGDOM STORE"
+  },
+  "type": "GENERIC_9X2",
+  "placeholderItem": {
+    "itemType": "GRAY_STAINED_GLASS_PANE",
+    "displayName": {
+      "en": "§0",
+      "de": "§0"
+    },
+    "lore": {
+      "en": [],
+      "de": []
+    },
+    "amount": 1,
+    "slots": [
+      0
+    ]
+  },
+  "reservedSlots": [],
+  "items": [
+
+    {
+      "itemType": "RED_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§c§l시장가로 이동하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 시장가로 이동합니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "market_store",
+      "actionArguments": [],
+      "slots": [
+        0,1,2,9,10,11
+      ]
+    },
+
+    {
+      "itemType": "ORANGE_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§6§l유저상점 열기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 유저상점을 오픈합니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "user_store",
+      "actionArguments": [],
+      "slots": [
+        3,4,5,12,13,14
+      ]
+    },
+
+    {
+      "itemType": "YELLOW_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§e§l경매소로 이동하기"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5좌클릭 시 경매소로 이동합니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "auction_store",
+      "actionArguments": [],
+      "slots": [
+        6,7,8,15,16,17
+      ]
+    }
+
+  ]
+}

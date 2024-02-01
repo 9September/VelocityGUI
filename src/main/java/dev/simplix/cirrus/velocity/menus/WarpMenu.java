@@ -6,9 +6,9 @@ import com.velocitypowered.api.proxy.server.RegisteredServer;
 import dev.simplix.cirrus.common.Cirrus;
 import dev.simplix.cirrus.common.business.PlayerWrapper;
 import dev.simplix.cirrus.common.configuration.MenuConfiguration;
-import dev.simplix.cirrus.common.converter.Converters;
 import dev.simplix.cirrus.common.menus.SimpleMenu;
 import dev.simplix.cirrus.common.model.CallResult;
+import dev.simplix.cirrus.velocity.CirrusPlugin;
 import net.md_5.bungee.api.ChatColor;
 
 import java.util.Locale;
@@ -46,7 +46,9 @@ public class WarpMenu extends SimpleMenu {
         });
 
         registerActionHandler("store", click -> {
-
+            player().closeInventory();
+            new StoreMenu(player, Cirrus.configurationFactory().loadFile("plugins/VelocityGUI/menu_store.json"), proxyServer, CirrusPlugin.getInstance()).open();
+            return CallResult.DENY_GRABBING;
         });
 
         registerActionHandler("quest", click -> {

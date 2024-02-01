@@ -1,0 +1,44 @@
+{
+  "title": {
+    "ko": "§b§l유저상점"
+  },
+  "type": "GENERIC_9X6",
+  "placeholderItem": {
+    "itemType": "GRAY_STAINED_GLASS_PANE",
+    "displayName": {
+      "en": "§0",
+      "de": "§0"
+    },
+    "lore": {
+      "en": [],
+      "de": []
+    },
+    "amount": 1,
+    "slots": [
+      0
+    ]
+  },
+  "reservedSlots": [],
+  "items": [
+
+    {
+      "itemType": "BLACK_STAINED_GLASS_PANE",
+      "displayName": {
+        "ko": "§f§l유저상점 테스트"
+      },
+      "lore": {
+        "ko": [
+          " ",
+          "§5테스트입니다."
+        ]
+      },
+      "amount": 1,
+      "actionHandler": "userstore",
+      "actionArguments": [],
+      "slots": [
+        21,22,23,30,31,32
+      ]
+    }
+
+  ]
+}

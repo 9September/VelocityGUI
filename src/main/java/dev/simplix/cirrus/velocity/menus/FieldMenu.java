@@ -2,6 +2,7 @@ package dev.simplix.cirrus.velocity.menus;
 
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
+import com.velocitypowered.api.proxy.ServerConnection;
 import com.velocitypowered.api.proxy.server.RegisteredServer;
 import dev.simplix.cirrus.common.business.PlayerWrapper;
 import dev.simplix.cirrus.common.configuration.MenuConfiguration;
@@ -20,26 +21,35 @@ public class FieldMenu extends SimpleMenu {
         super(player, configuration, Locale.ENGLISH);
         this.proxyServer = proxyServer;
 
-
         registerActionHandler("monster_field", click -> {
             Player target = player().handle();
+            player().closeInventory();
+
             Optional<RegisteredServer> server = proxyServer.getServer("Field");
+
             if (server.isPresent()) {
                 server.get().ping().thenAccept(ping -> target.createConnectionRequest(server.get()).connect());
                 player().sendMessage(ChatColor.GRAY + "몬스터 필드로 이동했습니다.");
+            } else {
+                player().sendMessage("해당서버가 존재하지 않습니다.");
             }
-            player().closeInventory();
+
             return CallResult.DENY_GRABBING;
         });
 
         registerActionHandler("wild_field", click -> {
             Player target = player().handle();
+            player().closeInventory();
+
             Optional<RegisteredServer> server = proxyServer.getServer("Wild");
+
             if (server.isPresent()) {
                 server.get().ping().thenAccept(ping -> target.createConnectionRequest(server.get()).connect());
                 player().sendMessage(ChatColor.GRAY + "야생 필드로 이동했습니다.");
+            } else {
+                player().sendMessage("해당서버가 존재하지 않습니다.");
             }
-            player().closeInventory();
+
             return CallResult.DENY_GRABBING;
         });
     }

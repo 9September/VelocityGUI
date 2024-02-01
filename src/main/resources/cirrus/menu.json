@@ -71,7 +71,7 @@
         ]
       },
       "amount": 1,
-      "actionHandler": "noAction",
+      "actionHandler": "field",
       "actionArguments": [],
       "slots": [
         6,7,8,15,16,17
@@ -91,7 +91,7 @@
         ]
       },
       "amount": 1,
-      "actionHandler": "noAction",
+      "actionHandler": "store",
       "actionArguments": [],
       "slots": [
         18,19,20,27,28,29
