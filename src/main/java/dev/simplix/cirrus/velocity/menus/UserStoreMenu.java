@@ -4,7 +4,6 @@ import com.velocitypowered.api.proxy.ProxyServer;
 import dev.simplix.cirrus.common.business.PlayerWrapper;
 import dev.simplix.cirrus.common.configuration.MenuConfiguration;
 import dev.simplix.cirrus.common.menus.SimpleMenu;
-import lombok.NonNull;
 
 import java.util.Locale;
 
